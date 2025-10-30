@@ -17,10 +17,9 @@ import java.util.HashMap;
 import java.util.function.Function;
 
 @Component
-@Service
 public class JWTService {
     @Value("${jwt-secret}")
-    public static String SECRET;
+    public String SECRET;
 
     /**
      * Generate the new token by providing the email
